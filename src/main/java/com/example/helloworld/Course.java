@@ -1,8 +1,20 @@
 package com.example.helloworld;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Course {
+
+    @Id
+    @GeneratedValue
     private long id;
+
+   // @Column(name = "course_name")
     private String name;
+
     private String author;
 
 
